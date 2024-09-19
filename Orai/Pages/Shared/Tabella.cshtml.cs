@@ -24,7 +24,7 @@ namespace Orai.Pages.Shared
             foreach (var cs in meccsek.Select(x => x.HazaiCsapat.Distinct()))
             {
                 Eredmeny ujCsapat = new Eredmeny();
-                ujCsapat.CsapatNev = cs;
+                ujCsapat.CsapatNev = (string)cs;
                 Eredmenyek.Add(ujCsapat);
             }
             foreach (var cs in Eredmenyek)
