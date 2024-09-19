@@ -37,7 +37,7 @@ namespace Orai.Pages
             _context.Meccsek.Add(Meccs);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./MeccsekListaja");
         }
     }
 }

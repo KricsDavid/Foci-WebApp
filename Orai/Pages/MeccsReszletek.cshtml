@@ -1,0 +1,61 @@
+﻿@page
+@model Orai.Pages.MeccsReszletekModel
+
+@{
+    ViewData["Title"] = "MeccsReszletek";
+}
+
+<h1>MeccsReszletek</h1>
+
+<div>
+    <h4>Meccs</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.Fordulo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.Fordulo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.HazaiGol)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.HazaiGol)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.VendegGol)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.VendegGol)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.HazaiFelidogol)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.HazaiFelidogol)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.VendegFelidogol)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.VendegFelidogol)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.HazaiCsapat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.HazaiCsapat)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Meccs.VendegCsapat)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Meccs.VendegCsapat)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./MeccsModositas" asp-route-id="@Model.Meccs.Id">Edit</a> |
+    <a asp-page="./MeccsekListaja">Back to List</a>
+</div>

@@ -11,5 +11,15 @@
         public string HazaiCsapat { get; set; }
         public string VendegCsapat { get; set; }
 
+        public string GyoztesCsapatNeve()
+        {
+            if (HazaiGol > VendegGol) return HazaiCsapat;
+            else if (HazaiGol < VendegGol) return VendegCsapat;
+            else return "";
+        }
+
     }
+
+
+
 }
