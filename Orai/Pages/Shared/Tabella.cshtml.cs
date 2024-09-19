@@ -32,6 +32,7 @@ namespace Orai.Pages.Shared
                 cs.GyozelmekSzama = meccsek.Where(x => x.GyoztesCsapatNeve() == cs.CsapatNev).Count();
                 cs.VeresegekSzama = meccsek.Where(x => x.HazaiCsapat == cs.CsapatNev || x.VendegCsapat == cs.CsapatNev
                 && x.GyoztesCsapatNeve()!= cs.CsapatNev && x.GyoztesCsapatNeve() != "").Count();
+
             }
 
         }
