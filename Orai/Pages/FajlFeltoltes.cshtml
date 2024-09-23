@@ -1,0 +1,10 @@
+﻿@page
+@model fajlfeltoltes.Pages.FajlFeltoltesModel
+@{
+}
+
+<form method="post" enctype="multipart/form-data">
+    <label asp-for="Feltoltes">Válassza ki a fájt</label>
+    <input asp-for="Feltoltes" type="file" />
+    <input type="submit" value="Feltölt" />
+</form>
